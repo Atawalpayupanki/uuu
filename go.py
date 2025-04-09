@@ -26,4 +26,4 @@ comandos = [
     # ["git", "push", "-u", "origin", "main"]
 ]
 for comando in comandos:
-    subprocess.run(comando)
+    subprocess.run(comando, capature_output=True, text=True)
