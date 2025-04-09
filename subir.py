@@ -4,7 +4,7 @@ comandos= [
     ["git", "add", "."],
     ["git", "commit", "-m", "secondcommit"],
     ["git", "branch", "-M", "main"],
-    ["git", "push", "-u", "origin", "main"]
+    ["git", "push"]
     ]
 for comando in comandos:
     subprocess.run(comando, capture_output=True, text=True)
